@@ -1,0 +1,13 @@
+FROM ubuntu
+RUN  apt update;
+RUN apt upadate; \
+    apt install -y nginx nano wget;\
+    mkdir /myapp/
+MAINTAINER sai
+ENTRYPOINT ["bash"]
+#CMD ["update"]
+WORKDIR ./app
+COPY ./* /app/
+ADD  https://downloads.apache.org/tomcat/tomcat-9/v9.0.64/bin/apache-tomcat-9.0.64.tar.gz.asc /app/
+EXPOSE 90
+VOLUME testvolume01

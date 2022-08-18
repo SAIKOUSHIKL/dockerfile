@@ -3,7 +3,7 @@ RUN  apt update
 RUN apt upadate; \
     apt install -y nginx nano wget;\
     mkdir /myapp/
-MAINTAINER venkat
+MAINTAINER sai
 WORKDIR ./app
 VOLUME testvolume01
 CMD ["nginx", "-g", "daemon off;"]

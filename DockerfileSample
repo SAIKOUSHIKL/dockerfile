@@ -11,3 +11,6 @@ COPY ./* /app/
 ADD  https://downloads.apache.org/tomcat/tomcat-9/v9.0.64/bin/apache-tomcat-9.0.64.tar.gz.asc /app/
 EXPOSE 90
 VOLUME testvolume01
+
+
+#https://docs.docker.com/engine/reference/builder/
